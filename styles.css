@@ -6,6 +6,7 @@
   --green-deep:#8FA872;
   --green-ink:#5C6E44;
   --brown:#8B6D47;
+  --nav-ink:#4A382F;
   --brown-soft:#C9A66B;
   --brown-line: rgba(139,109,71,0.22);
   --gold:#C69A27;
@@ -68,7 +69,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(251,248,239,0.92);backdr
 .brand img{width:34px;height:34px;border-radius:50%;object-fit:cover;}
 .brand b{font-family:'Cormorant Garamond', serif;font-style:italic;font-size:21px;color:var(--brown);font-weight:600;}
 nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;flex-wrap:wrap;}
-nav a{font-size:12.5px;letter-spacing:0.07em;text-transform:uppercase;text-decoration:none;color:var(--brown);opacity:0.78;position:relative;}
+nav a{font-size:12.5px;letter-spacing:0.07em;text-transform:uppercase;text-decoration:none;color:var(--nav-ink);opacity:0.78;position:relative;}
 nav a::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s ease;}
 nav a:hover{opacity:1;} nav a:hover::after{transform:scaleX(1);}
 nav a.current{opacity:1;color:var(--gold);}
@@ -89,7 +90,7 @@ nav a.current{opacity:1;color:var(--gold);}
   nav ul li{padding:0;border-bottom:1px dashed var(--brown-line);}
   nav ul li:last-child{border-bottom:none;}
   nav ul li a{
-    display:block;padding:16px 4px;font-size:14.5px;font-weight:700;color:var(--brown);
+    display:block;padding:16px 4px;font-size:14.5px;font-weight:700;color:var(--nav-ink);
     opacity:1;letter-spacing:0.06em;
   }
   nav ul li a.current{color:var(--gold);}
