@@ -12,10 +12,11 @@
 <link rel="stylesheet" href="styles.css">
 <style>
   .strip{overflow:hidden;white-space:nowrap;padding:14px 0;background:var(--green);border-top:1px solid var(--brown-line);border-bottom:1px solid var(--brown-line);}
-  .strip-track{display:inline-block;animation:scroll 26s linear infinite;}
-  .strip:hover .strip-track{animation-play-state:paused;}
-  @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  .strip-track{display:inline-block;animation:scroll 15s linear infinite;}
+  @media (hover:hover){.strip:hover .strip-track{animation-play-state:paused;}}
+  @keyframes scroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
   .strip span{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:var(--green-ink);padding:0 22px;}
+  @media (max-width:768px){.strip-track{animation:scroll 15s linear infinite;}}
 
   .teaser-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
   .teaser{text-decoration:none;color:inherit;display:block;}
@@ -63,7 +64,7 @@
       <span class="sep">•</span><span>Ramapuram, Chennai</span>
     </div>
     <h1 class="letters">More than a coffee.</h1>
-    <p>A neighbourhood cafe in Ramapuram serving filter coffee, matcha and thickshakes alongside pasta, pizza and rice bowls — and a space that's yours to book for birthdays, corporate get-togethers and private gatherings.</p>
+    <p>A neighbourhood cafe in Ramapuram serving fresh coffees, matcha and thickshakes alongside pasta, pizza and rice bowls — and a space that's yours to book for birthdays, corporate get-togethers and private gatherings.</p>
     <div class="video-hero-meta">
       <div><b>10 AM – 10 PM</b><span>Open all days</span></div>
       <div><b>₹200–400</b><span>Per person</span></div>
